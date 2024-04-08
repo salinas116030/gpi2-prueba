@@ -20,6 +20,9 @@ pipeline {
                     
                 // Run Maven on a Unix agent.
                 sh "mvn clean package"
+                
+                //Compilation+Packaged
+                sh "mvn install"
             }
         }
     }
